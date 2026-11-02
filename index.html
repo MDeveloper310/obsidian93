@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="OBSIDIAN 93 Season 01, Fault Line '93. Crystal fleece tracksuit. SF / LA. A 4:3 flash-film lookbook, turnaround, drop clock, and pre-order list."
+    />
+    <title>OBSIDIAN 93 — Fault Line '93</title>
+    <link rel="icon" href="%BASE_URL%favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="%BASE_URL%media/hero-poster.jpg" />
+  </head>
+  <body>
+    <a class="skip" href="#look">Skip to the cut</a>
+    <header class="nav" id="nav">
+      <a class="logo" href="#top">OBSIDIAN 93</a>
+      <nav class="nav-links" aria-label="Page">
+        <a href="#look">Look</a>
+        <a href="#turn">360</a>
+        <a href="#drop">Drop</a>
+        <a href="#list">List</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top" style="background-image: url('%BASE_URL%media/hero-poster.jpg')">
+        <video
+          id="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          poster="%BASE_URL%media/hero-poster.jpg"
+          width="848"
+          height="480"
+          aria-label="OBSIDIAN 93 Season 01 film"
+        >
+          <source src="%BASE_URL%media/obsidian93-hype-tmz-v2.mp4" type="video/mp4" />
+        </video>
+        <div class="grain" aria-hidden="true"></div>
+        <div class="vignette" aria-hidden="true"></div>
+        <div class="scrim" aria-hidden="true"></div>
+        <div class="film-flash" id="film-flash" aria-hidden="true"></div>
+        <button type="button" class="play-still" id="play-still" hidden>Play film</button>
+        <div class="hero-foot">
+          <p class="kicker">Season 01 · Fault Line '93</p>
+          <h1 class="wordmark">
+            <span class="ghost" aria-hidden="true">OBSIDIAN 93</span>
+            OBSIDIAN 93
+          </h1>
+          <div class="hero-row">
+            <p>Crystal fleece tracksuit. Silver fracture, sharp unisex cut. SF / LA.</p>
+            <div class="hero-actions">
+              <button type="button" id="sound" aria-pressed="false">Sound off</button>
+              <a class="cta" href="#look">Enter the cut</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>OBSIDIAN 93 — FAULT LINE '93 — CRYSTAL FLEECE — SF / LA — UNISEX SHARP CUT — </span>
+          <span>OBSIDIAN 93 — FAULT LINE '93 — CRYSTAL FLEECE — SF / LA — UNISEX SHARP CUT — </span>
+        </div>
+      </div>
+
+      <section class="panel" id="look">
+        <div class="panel-head reveal">
+          <p class="kicker">The cut</p>
+          <h2>Crystal fleece tracksuit</h2>
+          <p class="lede">
+            Zip hoodie, wide pant, one fracture through both. Ten colorways a line. Dusty ballet pink, lilac, and baby blue stay on the women’s side. Black-on-black and ivory iridescent are limited.
+          </p>
+          <ul class="specs">
+            <li>Zip hoodie + pant</li>
+            <li>Crystal fleece</li>
+            <li>Unisex sharp cut</li>
+            <li>Price at the drop</li>
+          </ul>
+        </div>
+        <div class="look-layout">
+          <aside class="look-side">
+            <div class="lines" id="lines" role="radiogroup" aria-label="Line"></div>
+            <p class="swatch-label" id="swatch-label">Colorway</p>
+            <div class="swatches" id="swatches" role="group" aria-label="Colorway"></div>
+            <div class="readout" id="readout" aria-live="polite"></div>
+            <details class="chart">
+              <summary>Swatch chart</summary>
+              <button type="button" class="chart-btn" id="open-chart">
+                <img
+                  src="%BASE_URL%media/img/colorway-swatch-chart.png"
+                  alt="OBSIDIAN 93 crystal tracksuit colorway chart. Large square is the fleece, small square is the crystal."
+                  width="1500"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+            </details>
+          </aside>
+          <div class="look-main">
+            <div class="grid-bar">
+              <p id="count"></p>
+              <button type="button" class="text-btn" id="all-frames">All frames</button>
+            </div>
+            <div class="mosaic" id="grid"></div>
+            <p class="empty" id="empty" hidden>No frames in this fracture.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="fault" aria-hidden="true"></div>
+
+      <section class="panel" id="turn">
+        <div class="panel-head reveal">
+          <p class="kicker">One silhouette</p>
+          <h2>Four sides</h2>
+          <p class="lede">Drag the still. Front, right, back, left. The crystal mark sits across the back.</p>
+        </div>
+        <div class="turn">
+          <div class="stage" id="stage" tabindex="0" aria-label="Tracksuit turnaround. Drag sideways or use the arrow keys.">
+            <img id="turn-img" alt="" width="864" height="1152" />
+            <span id="turn-read">Front · 0°</span>
+          </div>
+          <div class="turn-controls">
+            <button type="button" id="turn-prev">Prev</button>
+            <div class="angles" id="angles" role="tablist" aria-label="Angle"></div>
+            <button type="button" id="turn-next">Next</button>
+            <button type="button" id="spin" aria-pressed="false">Spin</button>
+          </div>
+          <p class="hint">Drag sideways, or use the arrow keys while the still is focused.</p>
+          <button type="button" class="text-btn" id="open-sheet">Open contact sheet</button>
+          <img
+            class="sheet"
+            id="sheet-img"
+            src="%BASE_URL%media/img/mockups-v6-turnaround-turnaround-sheet.jpg"
+            alt="Contact sheet of the crystal fleece tracksuit, front, back, and both sides."
+            width="1400"
+            height="467"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
+
+      <div class="fault" aria-hidden="true"></div>
+
+      <section class="panel drop" id="drop">
+        <div class="panel-head reveal">
+          <p class="kicker">Season 01</p>
+          <h2>The drop</h2>
+          <p class="lede">Friday 20 November 2026 · 10:00 PT. San Francisco and Los Angeles, same minute.</p>
+        </div>
+        <div class="clock" id="clock" role="group" aria-label="Time until the drop">
+          <div><b id="dd">00</b><span>Days</span></div>
+          <div><b id="hh">00</b><span>Hours</span></div>
+          <div><b id="mm">00</b><span>Minutes</span></div>
+          <div><b id="ss">00</b><span>Seconds</span></div>
+        </div>
+        <p class="drop-note" id="drop-note">The list hears first.</p>
+      </section>
+
+      <section class="panel list" id="list">
+        <div class="list-grid">
+          <div class="reveal">
+            <p class="kicker">Pre-order waitlist</p>
+            <h2>Get on the fault</h2>
+            <p class="lede">Leave a line, a colorway, and a size. Nothing is charged. This hold lives in your browser until the drop note goes out.</p>
+          </div>
+          <form id="waitlist" novalidate>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required placeholder="you@domain.com" />
+            </label>
+            <div class="split">
+              <label>
+                Line
+                <select name="line" required></select>
+              </label>
+              <label>
+                Size
+                <select name="size" required></select>
+              </label>
+            </div>
+            <label>
+              Colorway
+              <select name="color" required></select>
+            </label>
+            <p class="form-error" id="form-error" hidden></p>
+            <button type="submit">Hold my size</button>
+            <p class="fine">No payment. No checkout. A name on the list.</p>
+          </form>
+          <div class="thanks" id="thanks" hidden></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p class="logo">OBSIDIAN 93</p>
+      <p>San Francisco / Los Angeles · Season 01 Fault Line '93</p>
+      <p>Images are concept renders.</p>
+    </footer>
+
+    <dialog id="lightbox" aria-label="Lookbook frame">
+      <div class="lb">
+        <img id="lb-img" alt="" />
+        <div class="lb-bar">
+          <button type="button" id="lb-prev">Prev</button>
+          <div class="lb-copy">
+            <p id="lb-title"></p>
+            <p id="lb-meta"></p>
+          </div>
+          <button type="button" id="lb-all">Every frame</button>
+          <button type="button" id="lb-next">Next</button>
+          <button type="button" id="lb-close">Close</button>
+        </div>
+      </div>
+    </dialog>
+
+    <div id="fx" aria-hidden="true"></div>
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+    <noscript>
+      <p class="noscript">Filters, the turnaround, and the list need JavaScript. The film above still plays.</p>
+    </noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
