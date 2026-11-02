@@ -9,17 +9,8 @@ const need = (rel) => {
 
 need(HERO_VIDEO)
 need(HERO_POSTER)
-for (const stale of [
-  'obsidian93-hype.mp4',
-  'obsidian93-hype-v2.mp4',
-  'obsidian93-hype-vhs.mp4',
-  'obsidian93-hype-lounge.mp4',
-  'obsidian93-hype-lounge-v2.mp4',
-  'obsidian93-hype-dream.mp4',
-  'obsidian93-hype-tmz.mp4',
-  'obsidian93-hype-tmz-v2.mp4',
-]) {
-  if (existsSync(`public/media/${stale}`)) missing.push(`unexpected earlier hero video public/media/${stale}`)
+for (const file of readdirSync('public/media')) {
+  if (file.endsWith('.mp4') && file !== HERO_VIDEO) missing.push(`stale hero video public/media/${file}`)
 }
 
 const referenced = new Set()
