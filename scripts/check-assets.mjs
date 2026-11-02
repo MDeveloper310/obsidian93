@@ -17,6 +17,7 @@ for (const stale of [
   'obsidian93-hype-lounge-v2.mp4',
   'obsidian93-hype-dream.mp4',
   'obsidian93-hype-tmz.mp4',
+  'obsidian93-hype-tmz-v2.mp4',
 ]) {
   if (existsSync(`public/media/${stale}`)) missing.push(`unexpected earlier hero video public/media/${stale}`)
 }

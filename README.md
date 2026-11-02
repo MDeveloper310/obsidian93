@@ -2,7 +2,7 @@
 
 Season 01, **Fault Line '93**. A static site for the crystal fleece tracksuit: a full-viewport 4:3 flash-film hero, a men’s / women’s lookbook with colorway filters, a lightbox of every frame, a drag turnaround, a drop clock, and a pre-order waitlist.
 
-The hero is `public/media/obsidian93-hype-tmz-v2.mp4`, a 16:9 film. It autoplays muted, looped, and full-screen. **Sound off / Sound on** unmutes the audio track. Nothing is charged. The waitlist is saved in this browser only (`localStorage`).
+The hero is `public/media/obsidian93-hype-tmz-v3.mp4`, a 16:9 film. It autoplays muted, looped, and full-screen. **Sound off / Sound on** unmutes the audio track. Nothing is charged. The waitlist is saved in this browser only (`localStorage`).
 
 Images are concept renders.
 

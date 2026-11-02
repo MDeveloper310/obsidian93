@@ -101,7 +101,7 @@ export const CHART = {
   alt: 'OBSIDIAN 93 crystal tracksuit colorway chart. Large square is the fleece, small square is the crystal.',
 }
 
-export const HERO_VIDEO = 'obsidian93-hype-tmz-v2.mp4'
+export const HERO_VIDEO = 'obsidian93-hype-tmz-v3.mp4'
 export const HERO_POSTER = 'hero-poster.jpg'
 
 /** 10:00 PT, Friday 20 Nov 2026. November is Pacific Standard Time (UTC−8). */
